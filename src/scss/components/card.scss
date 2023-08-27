@@ -1,0 +1,45 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 50vw;
+  max-width: 50vw;
+  flex: 1;
+
+  padding: 0.5rem;
+  p {
+    overflow-wrap: break-word;
+    margin-bottom: 0.5rem;
+  }
+  img {
+    width: inherit;
+    height: 13rem;
+    object-fit: cover;
+  }
+
+  .costContaienr {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .price-compared {
+    text-decoration: line-through;
+    text-decoration-color: rgb(124, 124, 124);
+  }
+
+  .fl {
+    font-weight: lighter;
+  }
+
+  position: relative;
+  z-index: 0;
+  .shareIcon {
+    position: absolute;
+    bottom: 40%;
+    right: 20px;
+    background-color: #111827;
+    color: aliceblue;
+    font-size: 1.71rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 3;
+  }
+}

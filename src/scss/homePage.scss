@@ -1,0 +1,43 @@
+.category-selector {
+  position: sticky;
+  top: 28px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  background-color: #fafafa;
+  z-index: 3;
+
+  //   #7e59e7
+  button {
+    border-radius: 1rem;
+    border: solid #a3a3a3 1px;
+    background-color: transparent;
+    outline: transparent;
+    padding: 0.2rem 0.6rem;
+
+    &.selected {
+      background-color: #7c3aed;
+      color: white;
+      border-color: #7c3aed;
+    }
+  }
+}
+main {
+  .section {
+    padding: 0.5rem 0.3rem;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    span {
+      box-sizing: border-box;
+      padding: 0.7rem;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+}
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}

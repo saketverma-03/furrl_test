@@ -1,4 +1,5 @@
 import "@/scss/components/card.scss";
+import Link from "next/link";
 import { FiShare } from "react-icons/fi";
 import { RWebShare } from "react-web-share";
 
@@ -27,7 +28,14 @@ export default function Card({
   return (
     <>
       <div className="card-container">
-        <img src={image} alt="" />
+        <Link
+          href={{
+            pathname: `/image`,
+            query: { url: image },
+          }}
+        >
+          <img src={image} alt="" />
+        </Link>
         <a href={link}>
           <p className="font-light fl">{brandName}</p>
           <p className="title">{title}</p>
